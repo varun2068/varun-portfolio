@@ -15,10 +15,9 @@ body::-webkit-scrollbar {
 
 #body-header {
     height: 65vh;
-    opacity: 0.8;
-    background-image: url('wp5306483-work-desk-wallpapers.jpg');
+    background-image: url('Images/pexels-eberhard-grossgasteiger-572897.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     padding-top: 1.2rem;
 }
@@ -128,14 +127,14 @@ nav{
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 12vh;
 }
 
 #my-name {
     font-family: 'Besley';
     font-size: 3rem;
     letter-spacing: 0.1rem;
-    color: #d90429;
+    color: #000000;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -200,12 +199,12 @@ section:nth-child(2n + 1) {
     margin-top: -17vh;
 }
 
-#my-image img {
+#my-image img{
     height: 100%;
     width: 100%;
     border-radius: 50%;
     border: 3px solid white;
-    box-shadow: 1px 1px 10px 2px lightgrey;
+    box-shadow: 1px 1px 10px 5px rgb(255, 255, 255);
 }
 
 #about-para {
@@ -277,7 +276,7 @@ section:nth-child(2n + 1) {
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: lightgrey;
+    background-color: rgb(2, 57, 255);
     top: 25%;
     border-radius: 50%;
     z-index: 1;
@@ -288,7 +287,7 @@ section:nth-child(2n + 1) {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -11.9%;
 }
 
 .timeline-box:nth-child(2n)::after {
@@ -314,7 +313,7 @@ section:nth-child(2n + 1) {
     width: 0;
     top: 10%;
     left: 50%;
-    border: 1px dashed #0096fa6b;
+    border: 1px dashed #4646466b;
     height: 66%;
     color: #433E3F;
 }
@@ -480,7 +479,7 @@ textarea {
     padding: 4px 10px;
     border: 0px solid transparent;
     border-bottom: 2px solid white;
-    color: #d9dcdd;
+    color: #ffffff;
     background: transparent;
     width: 90%;
     line-height: 1.6;
@@ -501,6 +500,7 @@ textarea {
     line-height: 1;
     padding: 0.8em 0.8em 0.78em;
     text-transform: uppercase;
+    transition: 0.5s;
 }
 
 #contact-form button:hover {
@@ -522,7 +522,9 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-
+input::placeholder, textarea::placeholder{
+    color: black;
+}
 /* Common Text Align Classes */
 
 .text-right{
@@ -568,29 +570,37 @@ button:focus {
     color: #2857a4;
 }
 
-.mb-blue {
-    background-color: #2857a4;
+.mb-java-red {
+    background-color: #E01E23;
 }
 
-.mb-orange {
-    background-color: #ec4d1c;
+.mb-html-orange {
+    background-color: #E56027;
 }
 
-.mb-teal {
-    background-color: #0b8176;
+.mb-js-yellow {
+    background-color: #EAD41C;
 }
-
-.mb-light-purple {
-    background-color: #93738c;
+.mb-css-blue{
+    background-color: #2449D8;
 }
-.mb-red{
-    background-color: #dc143c;
+.mb-cpp-blue {
+    background-color: #0179C3;
+}
+.mb-python-blue{
+    background-color: #346E9B;
 }
 .mb-dark-green{
     background-color: #006400;
 }
 .mb-green{
     background-color: #009e60;
+}
+.mb-express-green{
+    background-color: #87BA30;
+}
+.mb-react-blue{
+    background-color: #5CCFEE;
 }
 
 
@@ -609,6 +619,10 @@ button:focus {
 .fifty-percent {
     height: inherit;
     width: 50%;
+}
+.sixty-percent{
+    height: inherit;
+    width: 60%;
 }
 .seventy-five-percent{
     height: inherit;
@@ -637,7 +651,7 @@ button:focus {
 
 @media only screen and (max-width: 768px) {
 
-
+    
     .timeline-box {
         width: 90%;
         left: 10% !important;
