@@ -15,7 +15,7 @@ body::-webkit-scrollbar {
 
 #body-header {
     height: 65vh;
-    background-image: url('Images/pexels-eberhard-grossgasteiger-572897.jpg');
+    background-image: url('Images/pexels-errin-casano-2356087.jpg');
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ nav{
 .no-list-style li a{
     display: block;
     list-style: none;
-    color: #fee440 ;
+    color: #ff4242 ;
     text-decoration: none;
     font-weight: 600;
     padding: 12px;
@@ -116,12 +116,14 @@ nav{
 
 .nav-menu li a {
     transition: color 0.5s;
+    z-index: 1;
 }
 
 .nav-menu li a:hover {
-    color: #d90429;
+    color: #080470;
     
 }
+
 
 
 /* Name and Social Icons*/
@@ -160,10 +162,12 @@ section {
 }
 
 section:nth-child(2n) {
-    background-color: #9e9b9b29;
+    background-color: #050522;
 }
-
-section:nth-child(2n + 1) {
+section:nth-child(2n+1){
+    background-color: #04122c;
+}
+section:nth-child(1) {
     background-color: white;
 }
 
@@ -175,7 +179,7 @@ section:nth-child(2n + 1) {
 
 .section-heading span {
     font-size: 40px;
-    color: #2857a4;
+    color: white;
     display: inline-block;
     padding-top: 10px;
     margin-right: 0.5rem;
@@ -186,10 +190,10 @@ section:nth-child(2n + 1) {
 /*About Section*/
 
 #about {
-    height: auto;
     width: 100%;
     position: relative;
     margin-bottom: 30px;
+    height: auto;
 }
 
 #my-image {
@@ -208,11 +212,11 @@ section:nth-child(2n + 1) {
 }
 
 #about-para {
-    font-family: 'Inconsolata';
+    font-family: 'Poppins';
     padding: 10px;
     width: 70%;
     text-align: justify;
-    color: grey;
+    color: rgb(0, 0, 0);
     line-height: 28px;
     font-size: 1.1rem;
     margin: auto;
@@ -313,9 +317,9 @@ section:nth-child(2n + 1) {
     width: 0;
     top: 10%;
     left: 50%;
-    border: 1px dashed #4646466b;
+    border: 1px dashed #ffffff6b;
     height: 66%;
-    color: #433E3F;
+    color: #fefefe;
 }
 
 #timeline-divider .timeline-traveller {
@@ -328,24 +332,24 @@ section:nth-child(2n + 1) {
     transform: rotate(90deg);
     margin-top: -35px;
     display: block;
-    color: #2857a4;
+    color: #ffdd03;
 }
 
 .experience-designation {
     font-size: 1.4rem;
+    color: #FF5722;
 }
 
 .experience-company-name {
     margin: 5px 0 0;
-    color: #eb822d;
+    color: #f6f6f6;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .experience-duration {
-    color: #9e9b9b;
     font-weight: 100;
-    color: grey;
+    color: rgb(7, 7, 7);
     font-size: 1rem;
 }
 
